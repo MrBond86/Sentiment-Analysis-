@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <style>
+      body {
+        background-color: #222831;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 0;
+        font-size: 36px;
+        color: #00adb5;
+      }
+
+      form {
+        margin: 50px auto;
+        width: 50%;
+        border: 2px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-color: #393e46;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #00adb5;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"] {
+        background-color: #00adb5;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0f8c93;
+      }
+
+      .container {
+        margin: 50px auto;
+        width: 80%;
+        max-width: 800px;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-color: #393e46;
+      }
+
+      .inputText {
+        color: #00ffca;
+      }
+
+      span.positive {
+        color: green;
+        font-weight: bold;
+      }
+
+      span.negative {
+        color: red;
+        font-weight: bold;
+      }
+
+      span.neutral {
+        color: orange;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 24px;
+        color: #333;
+        line-height: 1.5;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/result" method="POST">
+      <h1>Sentiment Analysis</h1>
+      <label for="tweet">Enter a text/Sentence:</label>
+      <input type="text" name="tweet" id="tweet" required />
+      <input type="submit" value="Analyze" />
+    </form>
+  </body>
+</html>
